@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>gym-finder-home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main-stylesheet.css" />
+    <link rel="stylesheet" href="css/home-header-stylesheet.css">
+    <link rel="stylesheet" href="css/footer_stylesheet.css">
+</head>
+
+<body>
+   <!-- HEADER -->
+  <header>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Top bar with Get Started -->
+      <div class="flex py-2 top-div">
+        <a href="#" class="ml-auto inline-block bg-indigo-600 text-white px-5 py-2 rounded-xl font-semibold shadow hover:bg-indigo-500 transition">
+          Get Started
+        </a>
+      </div>
+      
+      
+
+      <!-- Main header content -->
+      <div class="flex justify-between items-center py-4 ">
+        <!-- Logo -->
+        <div class="center-items">
+          <h1 class="logo">
+            <span>G</span><span>y</span><span>m</span><span>F</span><span>i</span><span>n</span><span>d</span><span>e</span><span>r</span>
+          </h1>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar">
+          <ul class="nav-links" id="navLinks">
+            <li><a href="index2.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <!-- Mobile Menu Toggle -->
+          <div class="menu-btn md:hidden" id="menuBtn">
+            <svg class="h-8 w-8 text-white cursor-pointer" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Optional JavaScript for menu toggle -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    menuBtn.addEventListener('click', () => {
+      if (navLinks.style.display === 'flex') {
+        navLinks.style.display = 'none';
+      } else {
+        navLinks.style.display = 'flex';
+        navLinks.style.flexDirection = 'column';
+        navLinks.style.backgroundColor = '#4e54c8';
+        navLinks.style.position = 'absolute';
+        navLinks.style.top = '100%';
+        navLinks.style.right = '30px';
+        navLinks.style.padding = '10px';
+        navLinks.style.borderRadius = '10px';
+      }
+    });
+  </script>
+
+    <main>
+        <div class="content">
+            <img src="images/Screenshot 2025-04-25 154723.png" alt="Main Visual" class="main-img" />
+            <h1>Welcome to Our Website</h1>
+            <p>Experience the future of web development with modern layouts and responsive design. Join us now to
+                explore more features.</p>
+            <a href="signin.html" target="_blank" style="text-decoration: none;">
+              <button class="login-btn">Login</button>
+            </a>
+            <p class="signup-text">Don't have an account? <a href="signup.html" class="signup-link">Sign up</a></p>
+
+            <div class="download">
+              <a href="files/sample.pdf" download class="download-btn">
+                ⬇️ Download File
+              </a>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container ">
+          <div class="footer-left">
+            <h2>GymFinder</h2>
+            <p>Helping you find the best gyms, trainers, and fitness centers near you.</p>
+          </div>
+  
+          <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Gyms</a></li>
+              <li><a href="#">Trainers</a></li>
+              <li><a href="#">Pricing</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-contact">
+            <h3>Contact</h3>
+            <p>Email: support@gymfinder.com</p>
+            <p>Phone: +91 98765 43210</p>
+          </div>
+        </div>
+  
+        <div class="footer-bottom">
+          <p>&copy; 2025 GymFinder. All rights reserved.</p>
+        </div>
+      </footer>
+</body>
+
+</html>
